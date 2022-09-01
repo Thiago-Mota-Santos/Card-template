@@ -1,30 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-
-
- body{
+body {
     font-family: 'Inter', sans-serif;
-    background: url(https://blog.emania.com.br/wp-content/uploads/2016/01/fotos-do-p%C3%B4r-do-sol-horizonte.jpg) no-repeat top center;  
+    background: url(https://blog.emania.com.br/wp-content/uploads/2016/01/fotos-do-p%C3%B4r-do-sol-horizonte.jpg) no-repeat top center;
     background-attachment: fixed;
     background-size: cover;
-    display: grid; 
+    display: grid;
     align-items: center;
     justify-items: center;
-    height: 95vh;
-    
-} 
+    height: 100vh;
+    width: 100vw;
+}
 
-
-li{
+li {
     list-style: none;
 }
 
- .box{
-
+.box {
     margin-top: 20px;
     border-radius: 16px 16px 0 0;
     width: 456px;
@@ -32,71 +27,69 @@ li{
     background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.2890625%200%200%200%200%200%200.125%200%200%200%200%200%200.125%200%200%200%200%200%200.52734375%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E), linear-gradient(45deg, #7DBEE3 0%, #FFA082 100%);
     background-size: 512px, cover;
     background-position: center, 0% 0%;
-    background-repeat: repeat, repeat; 
+    background-repeat: repeat, repeat;
     box-shadow: 0rem 1.75rem 2rem 0rem rgb(0 0 0 / 12%);
 }
 
-
-
-h1{
-    font-size:2em;
-    margin-block-start:0.67em;
-    margin-block-end:0.4em;
+h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.4em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
 }
-#image{
-    display:block;
+
+#image {
+    display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     margin-top: 20px;
     height: auto;
-    width: 141px;
+    width: 150px;
     border-radius: 50%;
-    
 }
 
-
-
-#text01{
-    color:#ffffff;
+#text01 {
+    color: #ffffff;
     text-align: center;
     letter-spacing: -0.175rem;
     width: 100%;
     font-weight: 700;
-    font-size:50px;
+    font-size: 50px;
     line-height: 1.125;
 }
 
-
-#text02{
-    color:#ffffff;
+#text02 {
+    color: #ffffff;
     text-align: center;
     font-size: 1em;
     line-height: 1.875;
     font-weight: 300;
 }
 
-
-.box-2{
-    display:flex;
-    align-items:center;
+.box-2 {
+    display: flex;
+    align-items: center;
     justify-content: center;
     box-shadow: 0rem 1.75rem 2rem 0rem rgb(0 0 0 / 12%);
     border-radius: 0 0 16px 16px;
     background: #ffffff;
     width: 456px;
     height: 252px;
+    margin-top: -24.2rem;
 }
 
-
-
-.buttons.style1 .button{
-    color:rgba(0,0,0,0.761);
-    border:solid 1px rgba(0,0,0,0.169);
+@media (max-width: 1366px) {
+    .box-2 {
+        margin-top: -3rem;
+    }
 }
 
+.buttons.style1 .button {
+    color: rgba(0, 0, 0, 0.761);
+    border: solid 1px rgba(0, 0, 0, 0.169);
+}
 
 .buttons.style1 li a {
     display: inline-flex;
@@ -105,16 +98,15 @@ h1{
     line-height: 1rem;
     vertical-align: middle;
     padding: 0 0.7em;
-    font-size:1em;
+    font-size: 1em;
     font-weight: 600;
-    border-radius:2rem;
+    border-radius: 2rem;
     justify-content: flex-end;
     flex-direction: row-reverse;
-    transition:transform 0.125s ease, color 0.125s ease, background-color 0.125s ease, border-color 0.125s ease ;
-    
+    transition: transform 0.125s ease, color 0.125s ease, background-color 0.125s ease, border-color 0.125s ease;
 }
 
-.buttons li a{
+.buttons li a {
     align-items: center;
     max-width: 100%;
     text-align: center;
@@ -122,40 +114,39 @@ h1{
     white-space: nowrap;
 }
 
-.buttons{
-    cursor:default;
+.buttons {
+    cursor: default;
     justify-content: center;
-    display:flex;
+    display: flex;
     letter-spacing: 0;
 }
 
-.buttons.style1 li a .label{
-
+.buttons.style1 li a .label {
     flex-shrink: 1;
-    flex-grow:1;
+    flex-grow: 1;
     width: 100%;
     text-align: left;
 }
 
-.buttons.style1{
+.buttons.style1 {
     gap: 0.7em;
     padding: 0.625rem 0;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-.buttons.style1 .button:hover{
-    color:#FF5C5C !important;
-    border-color:#FF5C5C !important;
-    
+.buttons.style1 .button:hover {
+    color: #FF5C5C !important;
+    border-color: #FF5C5C !important;
+
 }
 
-ul{
+ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start:40px;
+    padding-inline-start: 40px;
 }
 
-p{
-    padding:10px;
+p {
+    padding: 10px;
 }
